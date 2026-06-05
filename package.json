@@ -1,0 +1,27 @@
+{
+  "name": "musicvibe-tdd",
+  "version": "1.0.0",
+  "description": "MusicVibe - Plataforma de Streaming de Música com TDD",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.0.0",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.0.0",
+    "vitest": "^2.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "sequelize": "^6.37.8",
+    "sqlite3": "^5.1.7"
+  }
+}
