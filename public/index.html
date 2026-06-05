@@ -1,8 +1,19 @@
-<!DOCTYPE html><html><head><meta charset='utf-8'>
-<title>MusicVibe</title><link rel='stylesheet' href='css/style.css'></head>
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MusicVibe</title>
+<link rel="stylesheet" href="css/style.css"></head>
 <body>
-<header><h1>🎵 MusicVibe</h1><nav><a href="login.html">Login</a></nav></header>
-<section class="hero"><h2>Sua música. Seu ritmo.</h2><p>Streaming moderno para seu projeto TDD.</p></section>
-<section><h2>Músicas</h2><div id="tracks" class="grid"></div></section>
+<header><h1>🎵 MusicVibe</h1><nav><a href="login.html">Entrar</a><a href="dashboard.html">Dashboard</a></nav></header>
+<section class="hero">
+<h2>Descubra sua próxima música favorita</h2>
+<p>Projeto acadêmico desenvolvido com TDD, Express, Sequelize e Vitest.</p>
+</section>
+<section class="stats">
+<div class="card"><h3>Streaming</h3><p>Catálogo organizado por gêneros.</p></div>
+<div class="card"><h3>Playlists</h3><p>Crie e personalize coleções.</p></div>
+<div class="card"><h3>TDD</h3><p>Funcionalidades guiadas por testes.</p></div>
+</section>
+<section><h2>Faixas em destaque</h2><div id="tracks" class="grid"></div></section>
 <script src="js/api.js"></script><script src="js/home.js"></script>
 </body></html>

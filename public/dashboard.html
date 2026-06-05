@@ -1,18 +1,107 @@
-<!DOCTYPE html><html><head><meta charset='utf-8'><title>Dashboard</title><link rel='stylesheet' href='css/style.css'></head>
-<body><div class='layout'>
-    <aside>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - MusicVibe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="layout">
+
+  <aside>
     <h2>🎵 MusicVibe</h2>
+<div class="menu">
+  <p>📚 Biblioteca</p>
+  <p>🎶 Playlists</p>
+  <p>👤 Perfil</p>
+  <p onclick="logout()">🚪 Sair</p>
+</div>
+  </aside>
 
-    <p>Biblioteca</p>
-    <br>
+  <main>
 
+    <section class="welcome">
+      <h1>Olá, Mateus 👋</h1>
+      <p>Bem-vindo ao MusicVibe</p>
+    </section>
+
+    <section class="dashboard-stats">
+
+  <div class="stat-card">
+    <h3>12</h3>
+    <p>Músicas</p>
+  </div>
+
+  <div class="stat-card">
+    <h3>3</h3>
     <p>Playlists</p>
-    <br>
+  </div>
 
-    <p>Perfil</p>
-</aside>
-<main>
-<h2>Biblioteca</h2><div id='tracks' class='grid'></div>
-<h2>Minhas Playlists</h2><div id='playlists'></div>
-</main></div>
-<script src='js/api.js'></script><script src='js/dashboard.js'></script></body></html>
+  <div class="stat-card">
+    <h3>8</h3>
+    <p>Favoritas</p>
+  </div>
+
+</section>
+
+    <h2>Biblioteca</h2>
+
+    <div class="music-grid">
+
+      <div class="music-card">
+        <h3>🎵 Blinding Lights</h3>
+        <p>The Weeknd</p>
+      </div>
+
+      <div class="music-card">
+        <h3>🎵 Save Your Tears</h3>
+        <p>The Weeknd</p>
+      </div>
+
+      <div class="music-card">
+        <h3>🎵 Starboy</h3>
+        <p>The Weeknd</p>
+      </div>
+
+      <div class="music-card">
+        <h3>🎵 Die For You</h3>
+        <p>The Weeknd</p>
+      </div>
+
+    </div>
+
+    <h2 style="padding:0;margin-top:50px;">Minhas Playlists</h2>
+
+    <div class="music-grid">
+      <div class="music-card">
+        <h3>🔥 Treino</h3>
+        <p>15 músicas</p>
+      </div>
+
+      <div class="music-card">
+        <h3>🌙 Relaxar</h3>
+        <p>8 músicas</p>
+      </div>
+
+      <div class="music-card">
+        <h3>🚗 Viagem</h3>
+        <p>12 músicas</p>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+<script>
+function logout() {
+  window.location.href = 'login.html'
+}
+</script>
+
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
